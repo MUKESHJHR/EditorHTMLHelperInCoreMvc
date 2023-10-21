@@ -1,0 +1,65 @@
+﻿@model EditorHTMLHelperInCoreMvc.Models.Employee
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Edit Employee</h2>
+<table>
+    <tr>
+    <tr>
+        <td>
+            Employee Id
+        </td>
+        <td>
+                @*@Html.Editor("EmployeeId")*@
+                @Html.EditorFor(e => e.EmployeeId)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Name
+        </td>
+        <td>
+                @*@Html.Editor("Name")*@
+                @Html.EditorFor(e => e.Name)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Gender
+        </td>
+        <td>
+                @*@Html.Editor("Gender")*@
+                @Html.EditorFor(e => e.Gender)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Age
+        </td>
+        <td>
+                @*@Html.Editor("Age")*@
+                @Html.EditorFor(e => e.Age)
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            IsNewlyAdded
+        </td>
+        <td>
+                @*@Html.Editor("IsNewlyAdded")*@
+                @Html.EditorFor(e => e.IsNewlyAdded)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            DOB
+        </td>
+        <td>
+                @*@Html.Editor("DOB")*@
+                @Html.EditorFor(e => e.DOB)
+        </td>
+    </tr>
+</table>
